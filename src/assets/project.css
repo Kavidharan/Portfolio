@@ -1,0 +1,27 @@
+.projects{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    padding-top: 70px;
+}
+.projects iframe{
+    width: 80%;
+    height: 510px;
+}
+.projects div{
+    margin-left: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+.projects h3{
+    font-size: 19px;
+}
+@media (425px < width < 1024px ){
+    .projects div{
+        margin-top: 10px;
+    }
+    .projects iframe{
+        width: 90%;
+        height: 550px;
+    }
+}

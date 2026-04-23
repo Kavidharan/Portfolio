@@ -1,0 +1,184 @@
+.amimason{
+    border-left: 1px solid black;
+    width: 50%;
+    margin-top: 50px;
+}
+.computer{
+    background-image: url("./images/monitor.png");
+    background-size: contain;
+    height: 250px;
+    background-repeat: no-repeat;
+    margin-left: 280px;
+    margin-top: 50px;
+    position: absolute;
+}
+.keyboard{
+    margin-top: 240px;
+    height: 140px;
+    margin-left: -50px;
+    width: 280px;
+    transform: rotateX(40deg);
+    transform: rotateZ(-4deg);
+}
+.cabinet{
+    height: 400px;
+    width: 180px;
+    margin-left: -180px;
+    transform: rotateY(180deg);
+}
+.all{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 80px;
+}
+.profile{
+    height: 300px;
+    width: 300px;
+    margin: 100px 250px 0 0;
+    color: #38F2E0;
+}
+.profile h1{
+    margin-top: 40px;
+    font-weight: 900;
+    margin-left: -50px;
+    color: #0FC9F2;
+}
+.profile p {
+    margin-top: 12px;
+    font-weight: 600;
+    margin-left: -100px;
+    text-align: justify;
+    text-indent: 20px;
+    margin-right: -200px;
+}
+.reactlogo{
+    position: relative;
+    left: 325px;
+    top: 90px;
+    width: 130px;
+    height: 130px;
+    transform: rotateY(-20deg);
+    animation: reactlogo 5s infinite linear;
+}
+@keyframes reactlogo{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width:1024px) {
+    .profile{
+        margin-right: 210px;
+        width: 180px;
+        margin-left: 50px;
+    }
+    .computer{
+     margin-left: 170px;
+     margin-top: 10px;   
+    }
+    .reactlogo{
+        margin-left: -120px;
+        margin-top: -40px;
+    }
+}
+@media screen and (max-width:768px) {
+    .profile h1{
+        font-weight: 600;
+        font-size: 25px;
+        margin-left: -30px;
+        margin-right: -10px;
+    }
+    .profile p{
+        font-weight: 400;
+        font-size: 15px;
+        margin-left: -40px;
+        width: 370px;   
+    }
+    .profile{
+        width: 150px;
+    }
+    .cabinet{
+        height: 250px;
+        width: 120px;
+        margin-left: -120px;
+        margin-top: 1px;
+    }
+    .keyboard{
+        height: 100px;
+        width: 200px;
+        margin-top: 100px;
+    }
+    .computer{
+        height: 250px;
+        margin-top: 50px;
+        margin-left: 120px;
+    }
+    .reactlogo{
+        width: 80px;
+        height: 80px;
+        top: 120px;
+        left: 265px;
+    }
+}
+@media screen and (max-width:425px) {
+    .all{
+        flex-direction: column-reverse;
+    }
+    .profile{
+        margin-top: -10px;
+        margin-left: 70px;
+    }
+    .profile h1{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .profile p{
+        font-weight: 300;
+        font-size: 12px;
+    }
+    .computer{
+        margin-top: -120px;
+        margin-left: 180px;
+    }
+    .reactlogo{
+        top: -50px;
+        left: 330px;
+    }
+}
+@media screen and (max-width:375px) {
+    .computer{
+        margin-left: 160px;
+    }
+    .reactlogo{
+        left: 310px;
+    }
+    .profile{
+        margin-left: 50px ;
+    }
+    .profile h1{
+        font-weight: 300;
+        font-size: 18px;
+    }
+    .profile p{
+        font-weight: 200;
+        font-size: 12px;
+        width: 350px;
+    }
+}
+@media screen and (max-width:320px) {
+    .computer{
+        margin-left: 135px;
+    }
+    .reactlogo{
+        left: 285px;
+    }
+    .profile h1{
+        font-size: 16px;
+    }
+    .profile p{
+        font-size: 11px;
+        width: 300px;
+    }
+}

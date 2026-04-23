@@ -1,0 +1,123 @@
+.menu{
+    color:#021226;
+    background-color: rgba(255, 255, 255, 0.712);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 3%;
+    width: 95%;
+    height: 9%;
+    right: 2.5%;
+    left: 2.5%;
+    border-radius:15px ;
+    z-index: 5;
+}
+.menu h1{
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.menu a , .burgermenucontent a{
+    text-decoration: none;
+    color: #021226;
+    padding: 15px;
+    transition-duration: 400ms;
+    font-weight: 600;
+
+}
+.menu a:focus{
+    background-color: #D762D9;
+    padding: 12px 15px 12px 15px;
+    border-radius: 15px  15px 15px 15px;
+    
+}
+.burgermenu{
+    display: none;
+}
+.nav{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+.burgermenu{
+    display: none;
+    color:#021226;
+    background-color: rgba(255, 255, 255, 0.712);
+    position: sticky;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    padding: 5px;
+    justify-content: space-between;
+}
+.burgermenu button{
+    height: 30px;
+    width: 40px;
+    margin-right: 25px;
+    border: none;
+    background: transparent;
+}
+.burgermenu h2{
+    margin-left: 25px;
+}
+.burgermenu span{
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 5px 0;
+}
+.burgermenucontent{
+    height: 87.4vh;
+    background-color: #38F2E0;
+    width: 40vw;
+    margin-left: 60vw;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 6;
+    list-style-type: none;
+    overflow: hidden;
+}
+.blur{
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 5;
+}
+.burgermenucontent li{
+    margin-top: 10px;
+}
+.burgermenucontent a{
+padding: 10px 0 10px 50px;
+}
+.burgermenucontent a:focus{
+    background-color: #D762D9;
+    padding: 10px 100% 10px 50px;
+}
+
+
+@media screen and (max-width:425px) {
+    .menu{
+        display: none;
+    }
+    .burgermenu{
+        display: flex;
+    }
+}
+@media screen and (max-width:375px) {
+    .burgermenu{
+        width: 92%;
+    }
+}
+

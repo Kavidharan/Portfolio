@@ -1,0 +1,75 @@
+.table{
+    padding-top: 120px;
+}
+.table a{
+    text-decoration: none;
+    color: black;
+}
+table{
+    background-color: #852e8691;
+    margin: 0 30% 0 25%;
+    border-radius: 10px;
+}
+td{
+    padding: 10px 0 0 0;
+}
+td h2 {
+    margin: 0 150px 0 50px;
+}
+td h3{
+    margin: 0 50px 0 0 ;
+    overflow: hidden;
+}
+td a{
+    padding: 0;
+}
+@media screen and (max-width:1024px) {
+    table{
+        margin-left: 15%;
+    }
+    td h2{
+        margin-right: 100px;
+    }
+}
+@media screen and (max-width:768px) {
+    td h2{
+        margin-left: 20px;
+        margin-right: 100px;
+    }
+    table{
+        margin-left: 7%;
+    }
+}
+@media screen and (max-width:425px) {
+    .table{
+        padding-top: 80px;
+    }
+    tr{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    table{
+        margin-top: 15px;
+        margin-left: 70px;
+    }
+    td h3{
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 13px;
+    }
+    td h2{
+        font-size: 18px;
+        text-align: left;
+    }
+}
+@media screen and (max-width:375px) {
+    table{
+        margin-left: 45px;
+    }
+}
+@media screen and (max-width:320px) {
+    table{
+        margin-left: 16px;
+    }
+}

@@ -12,6 +12,7 @@ function App() {
       <BrowserRouter>
       <Nav />
         <Routes>
+          <Route path='/Portfolio' element ={<Home />} />
           <Route path = "/" element = {<Home />} />
           <Route path = '/skill' element = {<Skill />} />
           <Route path = '/project' element = {<Froject />} />

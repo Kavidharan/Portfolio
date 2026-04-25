@@ -1,7 +1,7 @@
 import React from 'react'
 import './contacts.css'
 
-function contacts() {
+function Contacts() {
   return (
     <div className='table'>
       <table>
@@ -39,4 +39,4 @@ function contacts() {
   )
 }
 
-export default contacts
+export default Contacts
